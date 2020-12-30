@@ -1,7 +1,13 @@
 body {
-  background-color: aliceblue;
-  font-family: 'Gaegu', cursive;
+  background-color: white;
+  font-family: 'Cutive Mono', monospace;
   font-size: 23px;
+  position: relative;
+  text-align: center;
+  word-spacing: 5px;
+  line-height: 35px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 #header-background{
   background-image: url("https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/3/ulaanbaatar-mongolia-skyline-47-michael-tompsett.jpg");
@@ -10,13 +16,18 @@ body {
   padding-top: 20px;
 }
 h1 {
-  margin-top: inherit;
-  font-family: 'Bungee Outline', cursive;
-  color: #C1C937;
-  font-size: 100px;
+  margin-top: 10px;
+  font-family: 'Permanent Marker', cursive;
+  color: #20A586;
+  font-size: 80px;
 }
 
 h2{
-  color: #5D389D;
+  color:#4B1ADC;
+  word-spacing: 10px;
+  text-align: center;
 
+}
+.image-source{
+  font-size: 15px;
 }
