@@ -1,4 +1,4 @@
-p {
+body {
   background-color: white;
   font-family: 'Cutive Mono', monospace;
   font-size: 23px;
@@ -36,7 +36,6 @@ p {
   font-size: 30px;
   color: black;
   padding-left: 20px;
-
 }
 #header-background{
   background-image: url("https://outdoortrip-web.s3.eu-central-1.amazonaws.com/2786-full-day-ulaanbaatar-city-tour/full-day-ulaanbaatar-city-tour.5e134231a80ea-full.jpg");
@@ -45,36 +44,104 @@ p {
   padding-top: 50px;
   padding-bottom: 30px;
 }
-.navigation {
+.button{
+  background-color: lavender;
+  position: relative;
+  align-items: center;
+  top: 300px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  opacity: 0.8;
+}
+.button span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  font-family: 'Cultive Mono', monospace;
+  font-size: 15px;
+}
+
+ul {
+  background: #EFC8F8;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+ul li {
+  color: #fff;
+  background: grey;
+  display: block;
   float: right;
-  height: 100%;
-
-}
-.navigation a {
-  height: 100%;
-  display: table;
-  float: left;
-  padding: 0px 20 px;
-  margin-right: 40px;
-}
-.navigation li {
-  display: table-cell;
-  vertical-align: middle;
-  height: 100%;
-  font-family: 'Cutive Mono', monospace;
-  font-size: 16px;
-  padding-bottom: 30px;
-  margin-right: 10px;
+  padding: 1.4rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.3s;
 }
 
+ul li a {
+  color: #fff;
+}
+ul li:hover {
+  background: brown;
+  cursor: pointer;
+}
+
+ul li ul {
+  background: white;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 1s ease;
+  margin-top: 1.5rem;
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li:focus> ul, /* this is the line we add */
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
 ol li{
   text-align: left;
-  margin-left: 10px;
-  font-family: 'Cutive Mono', monospace;
-  font-size: 23px;
+  list-style: none;
 }
-
 h2{
+  padding-top: 60px;
   color:#4B1ADC;
   word-spacing: 10px;
   text-align: center;
@@ -93,4 +160,43 @@ figcaption{
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+/* below is code of newsletter*/
+form {
+  border: 4px solid #f1f1f1;
+}
+.container {
+  padding: 15px;
+  background-color: #f1f1f1;
+}
+input[type=text], input[type=submit] {
+  width: 30%;
+  padding: 6px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  background-color: grey;
+  color: white;
+  border: none;
+}
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+th, td {
+padding: 5px;
+border-bottom: 1px solid #ddd;
+font-size: 20px;
+}
+tr:hover {
+background-color: pink;
+}
+
+footer {
+font-size: 15px;
+
+
 }
