@@ -116,7 +116,7 @@ ul li ul {
   background: white;
   visibility: hidden;
   opacity: 0;
-  min-width: 5rem;
+  min-width: 3rem;
   position: absolute;
   transition: all 1s ease;
   margin-top: 1.5rem;
@@ -141,8 +141,8 @@ ol li{
   list-style: none;
 }
 h2{
-  padding-top: 60px;
-  color:#4B1ADC;
+  padding-top: 150px;
+  color: #5A049D;
   word-spacing: 10px;
   text-align: center;
   font-family: 'Cutive Mono', monospace;
@@ -194,6 +194,7 @@ font-size: 20px;
 tr:hover {
 background-color: pink;
 }
+
 
 footer {
 font-size: 15px;
