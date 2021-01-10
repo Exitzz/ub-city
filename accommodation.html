@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Accommodation - Ulaanbaatar</title>
+<script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rock+Salt&display=swap" rel="stylesheet">
+<style>
+
+  .accordion_container{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .accordion{
+    list-style: none;
+    margin:0;
+    padding: 0;
+    border: #999 1px solid;
+    border-color: purple;
+  }
+  .accordion li {
+    background: white;
+    margin: 0;
+    padding: 0;
+    border-top: #999 1px solid;
+    border-color: purple;
+  }
+  .accordion li:first-child {
+    border-top: none;
+
+  }
+  .accordion li p{
+    margin: 0;
+  }
+  .title{
+    padding:10px;
+  }
+  .title span{
+    display: block;
+    float: right;
+  }
+  .content{
+    background: white;
+    border-top: #999 1px solid;
+    border-color: purple;
+    padding:10px;
+    display:none;
+  }
+</style>
+</head>
+<div class ="header">
+  <div class ="inner_header">
+
+      <a><div class ="logo_container"></a>
+      <h1>This is <span>Ulaanbaatar</span></h1>
+    </div>
+    <nav role="navigation">
+      <ul>
+        <li><a href="ub-city.html">HOME</a></li>
+        <li><a href="transport.html">TRAVEL</a>
+          <ul class="dropdown">
+            <li><a href="transport.html">GETTING THERE</a></li>
+            <li><a href="transport2.html">VISA REQUIREMENT</a></li>
+            <li><a href="Accommodation.html">ACCOMODATION</a></li>
+          </ul>
+        </li>
+        <li><a href="activity.html">ACTIVITIES</a>
+          <ul class="dropdown">
+            <li><a href="activity1.html">CULTURAL SPOTS</a></li>
+            <li><a href="activity2.html">HISTORICAL SPOTS</a></li>
+
+          </ul>
+          </li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="newsletter.html">NEWSLETTER</a></li>
+
+      </ul>
+    </nav>
+  </div>
+</div>
+<body>
+  <div class="accordion_container">
+    <h2>Where to sleep?</h2>
+    <p>There are many available options in terms of accommodation in Ulaanbaatar. It is up to your budget.
+      However, if you decide to travel there one day, I highly recommend you to experience "ger". Ger is a traditional
+      nomadic portable and round tent. </p>
+
+<ol class="accordion">
+  <li>
+    <div class="title">Guest Houses<span>+</span></div>
+    <div class="content">
+      <p>Content 1</p>
+      </div>
+  </li>
+  <li>
+    <div class="title">Hostels<span>+</span></div>
+    <div class="content">
+      <p>Content 2</p>
+      </div>
+  </li>
+  <li>
+    <div class="title">Hotels<span>+</span></div>
+    <div class="content">
+      <p>Content 3</p>
+      </div>
+  </li>
+  <li>
+    <div class="title">Ger Camps<span>+</span></div>
+    <div class="content">
+      <p>Content 4</p>
+      </div>
+  </li>
+</ol>
+  </div>
+
+  </div>
+
+</body>
+</html>
